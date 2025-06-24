@@ -3,18 +3,25 @@ const some_thing = "b2xla3NpaS5rb3ZhbGVua28uMTk5M0BnbWFpbC5jb20="
 
 
 function showPage(pageId, navId, printBtnId) {
-
-  document.querySelectorAll('.content-page').forEach(p => p.classList.remove('active'));
-  const page = document.getElementById(pageId);
-  if (page) page.classList.add('active');
-  document.querySelectorAll('.section-nav').forEach(nav => nav.classList.remove('active'));
-  const nav = document.getElementById(navId);
-  if (nav) nav.classList.add('active');
-  document.querySelectorAll('.btn-activation').forEach(btn => btn.classList.remove('active'));
-  const printBtn = document.getElementById(printBtnId);
-  if (printBtnId) printBtn.classList.add('active');
+  pageId = pageId || 'default-page';
+  navId = navId || 'default-nav';
+  printBtnId = printBtnId || 'default-btn';
+  if (pageId) {
+    document.querySelectorAll('.content-page').forEach(p => p.classList.remove('active'));
+    const page = document.getElementById(pageId);
+    if (page) page.classList.add('active');
+  }
+  if (navId) {
+    document.querySelectorAll('.section-nav').forEach(nav => nav.classList.remove('active'));
+    const nav = document.getElementById(navId);
+    if (nav) nav.classList.add('active');
+  }
+  if (printBtnId) {
+    document.querySelectorAll('.btn-activation').forEach(btn => btn.classList.remove('active'));
+    const printBtn = document.getElementById(printBtnId);
+    if (printBtn) printBtn.classList.add('active');
+  }
   window.scrollTo({ top: 0, behavior: 'smooth' });
-
 }
 function toggleTheme() {
   document.body.classList.toggle('dark');

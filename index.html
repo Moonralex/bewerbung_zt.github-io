@@ -11,9 +11,9 @@
 <div id="sidebar" class="sidebar">
   <div id="sidebar-content" class="sidebar-content">
   <h3>Bewerbung</h3>
-  <div class="file" onclick="showPage('anschreiben', 'anschreiben-nav', 'anschreiben-druck-btn')"><span class="icon python-file"></span>Anschreiben.py</div>
-  <div class="file" onclick="showPage('lebenslauf', 'lebenslauf-nav', 'lebenslauf-druck-btn')"><span class="icon python-file"></span>Lebenslauf.py</div>
-  <div class="file" onclick="showPage('zeugnisse', 'zeugnisse-nav', 'zeugnisse-druck-btn')"><span class="icon python-file"></span>Zeugnisse.py</div>
+  <div class="file" onclick="showPage('anschreiben', 'anschreiben-nav', 'anschreiben-druck-btn'); hideSidebar()"><span class="icon python-file"></span>Anschreiben.py</div>
+  <div class="file" onclick="showPage('lebenslauf', 'lebenslauf-nav', 'lebenslauf-druck-btn'); hideSidebar()"><span class="icon python-file"></span>Lebenslauf.py</div>
+  <div class="file" onclick="showPage('zeugnisse'); hideSidebar()"><span class="icon python-file"></span>Zeugnisse.py</div>
   <div id="anschreiben-nav" class="section-nav active">
     <ul class="list-nav">
       <li class="list-el"><a class="nav-el" href="#anfang">Anfang</a></li>
@@ -78,8 +78,6 @@
         Sie sehen eine Lebenslauf-Version, die wie Python-Code gestaltet ist. Wenn sie Ihnen zu grell oder schwer lesbar erscheint, klicken Sie auf die Schaltfläche „Druckversion“. Diese ist im klassischen Stil gehalten.
       </div>
 <pre class="code-block">
-
-
 <span class="line comment section" id="general-info">#ALLGEMEINE INFORMATIONEN</span>
 
 <span class="line"><span class="keyword">class</span> <span class="classname">WebDeveloper</span>:</span>
