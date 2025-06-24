@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bewerbung – JetBrains Style</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js"></script>
+</head>
+<body id="body">
+<div id="sidebar" class="sidebar">
+  <div id="sidebar-content" class="sidebar-content">
+  <h3>Bewerbung</h3>
+  <div class="file" onclick="showPage('anschreiben', 'anschreiben-nav', 'anschreiben-druck-btn')"><span class="icon python-file"></span>Anschreiben.py</div>
+  <div class="file" onclick="showPage('lebenslauf', 'lebenslauf-nav', 'lebenslauf-druck-btn')"><span class="icon python-file"></span>Lebenslauf.py</div>
+  <div class="file" onclick="showPage('zeugnisse', 'zeugnisse-nav', 'zeugnisse-druck-btn')"><span class="icon python-file"></span>Zeugnisse.py</div>
+  <div id="anschreiben-nav" class="section-nav active">
+    <ul class="list-nav">
+      <li class="list-el"><a class="nav-el" href="#anfang">Anfang</a></li>
+      <li class="list-el"><a class="nav-el" href="#warum-zahnen">Warum Zahnen Technik?</a></li>
+      <li class="list-el"><a class="nav-el" href="#bringen-mit">Was bringe ich mit?</a></li>
+    </ul>
+  </div>
+  <div id="lebenslauf-nav" class="section-nav">
+    <nav>
+      <ul class="list-nav">
+        <li class="list-el"><a class="nav-el" href="#general-info">Allgemeine Informationen</a></li>
+        <li class="list-el"><a class="nav-el" href="#berufserfahrung">Berufserfahrung</a></li>
+        <li class="list-el"><a class="nav-el" href="#bildungsweg">Bidungsweg</a></li>
+        <li class="list-el"><a class="nav-el" href="#about-me">Über mich</a></li>
+        <li class="list-el"><a class="nav-el" href="#contact-info">Kontakt Informationen</a></li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+  <div id="burger-button" class="burger-button" onclick="openSidebar()">
+    <img id="svg-image" alt="Burger icon" src="icons/burger.svg"/>
+  </div>
+</div>
+<div class="overlay" onclick="hideSidebar()"></div>
+<div class="main">
+  <div class="topbar">
+    <h1 class="title-text">Bewerbung – Oleksii Kovalenko</h1>
+      <div class="btn-group">
+        <a id="anschreiben-druck-btn" href="anschrieben.html" class="btn btn-activation print-btn active" target="_blank"><span class="icon print print-style"></span>Druckversion</a>
+        <a id="lebenslauf-druck-btn" href="lebenslauf.html" class="btn btn-activation print-btn" target="_blank"><span class="icon print print-style"></span>Druckversion</a>
+        <button class="btn toggle-btn" onclick="toggleTheme(); changeImage()"><span id="night-light" class="icon"></span>Thema</button>
+      </div>
+  </div>
+  <div class="main-content">
+    <div id="anschreiben" class="content-page active">
+      <h1><span id="document" class="icon"></span>Anschreiben.py</h1>
+
+        <h2 id="anfang" class="section">Bewerbung um die Ausbildungsstelle als Fachinformatiker für Anwendungsentwicklung</h2>
+        <img id="my-foto" alt="Mein Foto" src="images/my_foto_blur.jpg" class="foto">
+        <p>Sehr geehrte Frau Zahnen,</p>
+        <p>hiermit bewerbe ich mich um eine Ausbildung als Softwareentwickler in Ihrer Firma.</p>
+        <p>Ich habe mit Ihrem Mitarbeiter auf der Jobmesse(Gerolstein, März 2025) gesprochen. Mit großem Interesse habe ich mich über Ihre Firma informiert. Besonders interessant finde ich Ihre Website mit vielen Informationen zu Ihren Projekten und Ausbildungsangeboten.</p>
+        <p>Daher stelle ich Ihnen mit dieser Bewerbung meine Eignung und Motivation für diesen meinen potenziellen Ausbildungsplatz vor.</p>
+        <h2 id="warum-zahnen" class="section">Warum möchte ich bei Zahnen Technik lernen?</h2>
+        <p>Besonders gefällt mir, dass Ihr Unternehmen Weiterbildungen unterstützt und die Möglichkeit bietet, in praktischen Projekten eng mit den Nutzerinnen und Nutzern zusammenzuarbeiten. Unter den vielen IT-Berufen spricht mich die Arbeit mit Code am meisten an.</p>
+        <p>Besonders motiviert mich die Chance, Prozesse zu automatisieren, um die Arbeit der Anwenderinnen und Anwender zu erleichtern. Ich denke stets aus der Perspektive der späteren Nutzenden und bin überzeugt, dass Benutzerfreundlichkeit und eine intuitive Oberfläche zu den wichtigsten Merkmalen guter Software gehören.</p>
+        <p>Mit großem Interesse habe ich auch über das InnovationLab gelesen. Ich finde es spannend, neue Ideen zu entwickeln und praktisch umzusetzen. Auf Ihrer Website habe ich gesehen, dass Sie mit PHP und JavaScript arbeiten. Diese beiden Sprachen ähneln in Syntax und Prinzipien sehr stark Python, mit dem ich derzeit arbeite, daher sehe ich keine Schwierigkeiten beim Umstieg. Mit SQL habe ich im Rahmen meiner Weiterbildung bereits gearbeitet. Natürlich bin ich offen, auch weitere Sprachen oder Frameworks zu lernen.</p>
+        <h2 id="bringen-mit" class="section">Was bringe ich mit?</h2>
+        <p>In der Ukraine habe ich ca. 10 Jahre im Bereich Internetmarketing gearbeitet. Zu meinen Aufgaben gehörte Inhaltserstellung, Erstellen und technisches Unterstützen von Blogs, Online-Handel, Visitenkartenseiten auf WordPress CMS. Außerdem habe ich viel mit Computer Hardware gearbeitet und Kundensupport geleistet.</p>
+        <p>Mein Ziel ist es, Software Ingenieur zu werden. Ich interessiere mich besonders für Backend-Entwicklung. Daher habe ich, als ich nach Deutschland kam, einen Python-Kurs begonnen.</p>
+        <p>Ich lerne weiterhin Python und andere Webentwicklungstechnologien. Nach dem Kurs verfüge ich über grundlegende Python-, Django- (REST, ORM), SQL-Kenntnisse. Darüber hinaus werde ich mich kurz mit JavaScript, HTML+CSS, FastAPI, Docker, Machine Learning und anderen Technologien vertraut machen.</p>
+        <p>Im März diesen Jahres habe ich meinen Deutschkurs erfolgreich mit der B1-Prüfung abgeschlossen, der B2-Kurs beginnt im Juli 2025. Ich bemühe mich, auch im Alltag und bei der Arbeit so viel Deutsch wie möglich zu sprechen.</p>
+        <p>Ich möchte gerne in Ihrem Unternehmen eine Ausbildung machen.</p>
+        <p>Zu jeder Zeit würde ich mich aber darüber hinaus über ein Angebot von Ihnen für ein Praktikum oder ein MiniJob(für einige Wochenstunden) freuen. So könnten wir uns gegenseitig besser kennenlernen.</p>
+        <p>Auch das Jobcenter unterstützt mich sehr in meiner Motivation, eine Ausbildung in Bereich IT zu machen.</p>
+        <p>Über Ihre Einladung zu einem Vorstellungsgespräch würde ich mich sehr freuen.</p>
+    </div>
+    <div id="lebenslauf" class="content-page">
+      <h1><span id="file-cv" class="icon"></span>Lebenslauf.py</h1>
+<pre class="code-block">
+  <div id="notification" class="notification">
+    <button class="cancel-btn" type="button" onclick="hideById('notification')">&times;</button>
+    Sie sehen eine Lebenslauf-Version, die wie Python-Code gestaltet ist. Wenn sie Ihnen zu grell oder schwer lesbar erscheint, klicken Sie auf die Schaltfläche „Druckversion“. Diese ist im klassischen Stil gehalten.
+  </div>
+
+<span class="line comment section" id="general-info">#ALLGEMEINE INFORMATIONEN</span>
+
+<span class="line"><span class="keyword">class</span> <span class="classname">WebDeveloper</span>:</span>
+<span class="line lvl2"><span class="self">self</span>.name = <span class="string">"Oleksii"</span></span>
+<span class="line lvl2"><span class="self">self</span>.vorname = <span class="string">"Kovalenko"</span></span>
+<span class="line lvl2"><span class="self">self</span>.geburtsdatum = <span class="string">"08-05-1993"</span></span>
+<span class="line lvl2"><span class="self">self</span>.staatsangehörigkeit = <span class="string">"ukrainisch"</span></span>
+<span class="line lvl2"><span class="self">self</span>.fuhrerschein = classe(<span class="string">"B"</span>)</span>
+<span class="line lvl2"><span class="self">self</span>.familienstand = <span class="string">"verheiratet"</span></span>
+<span class="line lvl2"><span class="self">self</span>.kinder = <span class="number">1</span></span>
+
+<span class="line lvl2"><span class="keyword">def</span> <span class="funcname">kurzprofil</span>(<span class="self">self</span>):</span>
+<span class="line lvl3"><span class="keyword">return</span> <span class="string">"Ich habe mein ganzes Leben lang mit Computern und Internet Marketing gearbeitet, jetzt lerne ich Python als Programmierer."</span></span>
+
+<span class="line comment section" id="berufserfahrung">#BERUFSERFAHRUNG</span>
+
+<span class="line decorator">@selbstandig</span>
+<span class="line"><span class="keyword">class</span> <span class="classname">Freiberuflicher Textschreiber</span>(<span class="classname">Freelance Copywriter</span>):</span>
+<span class="line lvl2"><span class="self">self</span>.daure = <span class="string">"06/2010 - 02/2022"</span></span>
+<span class="line lvl2"><span class="self">self</span>.location = <span class="string">"Cherkasy, Ukraine"</span></span>
+
+<span class="line lvl2"><span class="keyword">def</span> <span class="funcname">beschreibung</span>(<span class="self">self</span>):</span>
+<span class="line lvl3"><span class="keyword">return</span> <span class="string">"Kreative Werbetexte (UA, RU): Gaming-PC, Hardware, Computerspiele, neue PC Technologien, PC-Montage, PCReparatur, Fehlerbehebung und Konfiguration von Windows, Software Installation."</span></span>
+
+<span class="line decorator">@selbstandig</span>
+<span class="line"><span class="keyword">class</span> <span class="classname">Technischer Support/PC-Zusammenbau</span>:</span>
+<span class="line lvl2"><span class="self">self</span>.type = <span class="string">"freiberuflich"</span></span>
+<span class="line lvl2"><span class="self">self</span>.dauer = <span class="string">"07/2014 - 02/2022"</span></span>
+<span class="line lvl2"><span class="self">self</span>.location = <span class="string">"Cherkasy, Ukraine"</span></span>
+
+<span class="line lvl2"><span class="keyword">def</span> <span class="funcname">beschreibung</span>(<span class="self">self</span>):</span>
+<span class="line lvl3"><span class="funcname">tätigkeiten_list</span> = [</span>
+<span class="line lvl4"><span class="string">"Beratung bei der Auswahl der Komponenten"</span>,</span>
+<span class="line lvl4"><span class="string">"Montage und Einrichtung"</span>,</span>
+<span class="line lvl4"><span class="string">"Installation von Programmen und Basissystem"</span>,</span>
+<span class="line lvl3">]</span>
+
+<span class="line decorator">@selbstandig</span>
+<span class="line"><span class="keyword">class</span> <span class="classname">Site Administrator</span>:</span>
+<span class="line lvl2"><span class="self">self</span>.type = <span class="string">"freiberuflich"</span></span>
+<span class="line lvl2"><span class="self">self</span>.dauer = <span class="string">"03/2016 - 06/2018"</span></span>
+<span class="line lvl2"><span class="self">self</span>.location = <span class="string">"Cherkasy, Ukraine"</span></span>
+
+<span class="line lvl2"><span class="keyword">def</span> <span class="funcname">beschreibung</span>(<span class="self">self</span>):</span>
+<span class="line lvl3"><span class="keyword">return</span> <span class="string">"Erstellung und Betreuung von WordPress-Websites als Nebeneinkommen."</span></span>
+
+<span class="line"><span class="keyword">class</span> <span class="classname">Restaurantmitarbeiter</span>:</span>
+<span class="line lvl2"><span class="self">self</span>.unternehmen = <span class="string">"McDonald’s Ukraine"</span></span>
+<span class="line lvl2"><span class="self">self</span>.dauer = <span class="string">"10/2022 - 06/2023"</span></span>
+<span class="line lvl2"><span class="self">self</span>.location = <span class="string">"Cherkasy, Ukraine"</span></span>
+
+<span class="line lvl2"><span class="keyword">def</span> <span class="funcname">beschreibung</span>(<span class="self">self</span>):</span>
+<span class="line lvl3"><span class="keyword">return</span> <span class="string">"Seit Kriegsbeginn entfiel die Onlinearbeit, deshalb arbeitete ich nun hier."</span></span>
+
+<span class="line"><span class="keyword">class</span> <span class="classname">Ehrenamtlicher Mitarbeiter</span>:</span>
+<span class="line lvl2"><span class="self">self</span>.unternehmen = <span class="string">"TAFEL"</span></span>
+<span class="line lvl2"><span class="self">self</span>.dauer = <span class="string">"09/2023 - 06/2024"</span></span>
+<span class="line lvl2"><span class="self">self</span>.location = <span class="string">"54595 Prüm"</span></span>
+
+
+<span class="line"><span class="keyword">class</span> <span class="classname">Fahrer im Lieferservice</span>:</span>
+<span class="line lvl2"><span class="self">self</span>.unternehmen = <span class="string">"REWE Stadtkyll"</span></span>
+<span class="line lvl2"><span class="self">self</span>.dauer = <span class="string">"ab 01/2025"</span></span>
+<span class="line lvl2"><span class="self">self</span>.location = <span class="string">"Deutschland"</span></span>
+<span class="line lvl2"><span class="self">self</span>.type = <span class="string">"MiniJob"</span></span>
+
+<span class="line lvl2"><span class="keyword">def</span> <span class="funcname">beschreibung</span>(<span class="self">self</span>):</span>
+<span class="line lvl3"><span class="keyword">return</span> <span class="string">"Seitdem es meine Deutschkenntnisse möglich machen, arbeite ich hier, was mein Sprachverständnis und meine integration zusätzlich unterstützt."</span></span>
+
+
+
+
+<span class="line comment section" id="bildungsweg">#BILDUNGSWEG</span>
+
+<span class="line"><span class="keyword">class</span> <span class="classname">Realschule</span>:</span>
+<span class="line lvl2"><span class="self">self</span>.dauer = <span class="string">"09/2000 - 06/2011"</span></span>
+
+<span class="line"><span class="keyword">class</span> <span class="classname">Deutschkurs</span>:</span>
+<span class="line lvl2"><span class="self">self</span>.name = <span class="string">"Deutsch als Fremdsprache"</span></span>
+<span class="line lvl2"><span class="self">self</span>.dauer = <span class="string">"07/2024 - 03/2025"</span></span>
+<span class="line lvl2"><span class="self">self</span>.level = <span class="string">"B1"</span></span>
+
+<span class="line"><span class="keyword">class</span> <span class="classname">Programierungskurs</span>:</span>
+<span class="line lvl2"><span class="self">self</span>.name = <span class="string">"Python Developer"</span></span>
+<span class="line lvl2"><span class="self">self</span>.anfang = <span class="string">"01/2023"</span></span>
+<span class="line lvl2"><span class="self">self</span>.status = <span class="string">"laufend"</span></span>
+
+<span class="line comment section" id="about-me">#ÜBER MICH</span>
+
+<span class="line"><span class="keyword">class</span> <span class="classname">Details</span>(<span class="classname">WebDeveloper</span>):</span>
+<span class="line lvl2"><span class="keyword">def</span> <span class="funcname">technologien</span>(<span class="self">self</span>):</span>
+<span class="line lvl3"><span class="funcname">technologien_niveau</span> = {</span>
+<span class="line lvl4"><span class="string">"HTML\CSS"</span>: <span class="string">"Grundkenntnisse"</span>,</span>
+<span class="line lvl4"><span class="string">"Python"</span>: <span class="string">"Mittlere Kenntnisse"</span>,</span>
+<span class="line lvl4"><span class="string">"Django"</span>: <span class="string">"Grundkenntnisse"</span>,</span>
+<span class="line lvl4"><span class="string">"SQL"</span>: <span class="string">"Grundkenntnisse"</span>,</span>
+<span class="line lvl4"><span class="string">"Git"</span>: <span class="string">"Grundkenntnisse"</span>,</span>
+<span class="line lvl4"><span class="string">"JavaScript"</span>: <span class="string">"Grundkenntnisse"</span>,</span>
+<span class="line lvl3">}</span>
+
+<span class="line lvl2"><span class="keyword">def</span> <span class="funcname">sprachen</span>(<span class="self">self</span>):</span>
+<span class="line lvl3"><span class="funcname">sprachen_niveau</span> = {</span>
+<span class="line lvl4"><span class="string">"Englisch"</span>: <span class="string">"A2"</span>,</span>
+<span class="line lvl4"><span class="string">"Deutsch"</span>: <span class="string">"B1 (DTZ-Sertifikat)"</span>,</span>
+<span class="line lvl4"><span class="string">"Ukrainisch"</span>: <span class="string">"Muttersprache"</span>,</span>
+<span class="line lvl4"><span class="string">"Russisch"</span>: <span class="string">"Zweite Muttersprache"</span>,</span>
+<span class="line lvl3">}</span>
+
+<span class="line lvl2"><span class="keyword">def</span> <span class="funcname">hobbys</span>(<span class="self">self</span>):</span>
+<span class="line lvl3"><span class="keyword">list</span> = [</span>
+<span class="line lvl4"><span class="string">"Metallschweißen"</span>,</span>
+<span class="line lvl4"><span class="string">"Holzbearbeitung"</span>,</span>
+<span class="line lvl4"><span class="string">"Computerspiele"</span>,</span>
+<span class="line lvl3">]</span>
+
+<span class="line comment section" id="contact-info">#KONTAKT INFORMATIONEN</span>
+
+<span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span>
+<span class="line lvl2"><span class="funcname">schrieben</span>(<span id="info-btn-1" class="btn print-btn print-btn-small" onclick="getThingOne(); hideById('info-btn-1')"><span id="telephone" class="icon print-style"></span>Informationen zeigen</span><span id="thing-one" class="string"></span>)</span>
+<span class="line lvl2"><span class="funcname">anrufen</span>(<span id="info-btn-2" class="btn print-btn print-btn-small" onclick="getAnotherThing(); hideById('info-btn-2')"><span id="email" class="icon print-style"></span>Informationen zeigen</span><span id="thing-two" class="string"></span>)</span>
+</pre>
+    </div>
+    <div id="zeugnisse" class="content-page">
+      <h1><span id="certificate" class="icon"></span>Zeugnisse.py</h1>
+      <p>
+        <span id="MIT-Zertifikat" class="btn print-btn print-btn-medium" onclick="openPDF('MIT-Zertifikat')">
+          <span class="icon print-style check">
+
+          </span>
+          MIT-Zertifikat
+        </span>
+      </p>
+      <p>
+        <span id="B2-Zertifikat" class="btn print-btn print-btn-medium" onclick="openPDF('B2-Zertifikat')">
+          <span class="icon print-style check">
+
+          </span>
+          B2-Zertifikat
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+<script>
+  setTimeout(() => {
+    getImageById("my_foto", "my-foto")
+  }, 2000);
+</script>
+</body>
+</html>

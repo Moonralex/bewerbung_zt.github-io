@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Bewerbung um Ausbildungsstelle als Fachinformatiker</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 3cm;
+          color: #000;
+          line-height: 1.6;
+      }
+      h1 {
+          text-align: center;
+          margin-bottom: 2cm;
+          text-transform: uppercase;
+      }
+      .absender, .anschrift, .datum, .betreff, .text, .grußformel {
+          margin-bottom: 20px;
+      }
+      .betreff {
+          font-weight: bold;
+          text-transform: uppercase;
+      }
+      .text p {
+          margin-bottom: 12px;
+          text-align: justify;
+      }
+      .main-content {
+          max-width: 800px;
+          margin: auto;
+      }
+      .alert {
+          appearance: none;
+          cursor: pointer;
+
+          font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+          font-size: 1.3rem;
+
+          line-height: 1.6rem;
+          border-radius: 6px;
+          padding: 1rem 3rem;
+          margin-bottom: 2rem;
+
+          box-sizing: border-box;
+
+          position: relative;
+          text-align: center;
+          text-decoration: none;
+          user-select: none;
+          vertical-align: middle;
+          white-space: normal;
+          background-color: #2ea44f;
+          font-weight: 600;
+          border: 1px solid rgba(27, 31, 35, .15);
+          box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+          color: #fff;
+          transition-duration: 0.5s;
+      }
+      .alert:hover {
+          background-color: #268742;
+          box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+          transition-duration: 0.5s;
+      }
+  </style>
+  <script src="scripts.js"></script>
+</head>
+<body>
+
+<div class="main-content">
+
+<div id="info-alert" class="alert" onclick="getThingOne(); getAnotherThing(); hideById('info-alert'); hideById('free-spaces');">
+  <strong>Schutz vor Web Scraping und Bots.</strong><br>
+  Klicken Sie hier, um versteckte Informationen anzuzeigen.
+</div>
+
+
+<div class="absender">
+  Oleksii Kovalenko<br>
+  <div id="thing-two"></div>
+  <div id="thing-one"></div>
+  <div id="free-spaces">
+  <br>
+  <br>
+  </div>
+</div>
+
+<div class="anschrift">
+  Zahnen Technik GmbH<br>
+  Frau Zahnen
+</div>
+
+<div class="datum">
+  Jünkerath, den 10. Juni 2025
+</div>
+
+<div class="betreff">
+  Bewerbung um die Ausbildungsstelle als Fachinformatiker für Anwendungsentwicklung
+</div>
+
+<div class="text">
+  <p>Sehr geehrte Frau Zahnen,</p>
+  <p>hiermit bewerbe ich mich um eine Ausbildung als Softwareentwickler in Ihrer Firma.</p>
+  <p>Ich habe mit Ihrem Mitarbeiter auf der Jobmesse(Gerolstein, März 2025) gesprochen. Mit großem Interesse habe ich mich über Ihre Firma informiert. Besonders interessant finde ich Ihre Website mit vielen Informationen zu Ihren Projekten und Ausbildungsangeboten.</p>
+  <p>Daher stelle ich Ihnen mit dieser Bewerbung meine Eignung und Motivation für diesen meinen potenziellen Ausbildungsplatz vor.</p>
+  <h3>Warum möchte ich bei Zahnen Technik lernen?</h3>
+  <p>Besonders gefällt mir, dass Ihr Unternehmen Weiterbildungen unterstützt und die Möglichkeit bietet, in praktischen Projekten eng mit den Nutzerinnen und Nutzern zusammenzuarbeiten. Unter den vielen IT-Berufen spricht mich die Arbeit mit Code am meisten an.</p>
+  <p>Besonders motiviert mich die Chance, Prozesse zu automatisieren, um die Arbeit der Anwenderinnen und Anwender zu erleichtern. Ich denke stets aus der Perspektive der späteren Nutzenden und bin überzeugt, dass Benutzerfreundlichkeit und eine intuitive Oberfläche zu den wichtigsten Merkmalen guter Software gehören.</p>
+  <p>Mit großem Interesse habe ich auch über das InnovationLab gelesen. Ich finde es spannend, neue Ideen zu entwickeln und praktisch umzusetzen. Auf Ihrer Website habe ich gesehen, dass Sie mit PHP und JavaScript arbeiten. Diese beiden Sprachen ähneln in Syntax und Prinzipien sehr stark Python, mit dem ich derzeit arbeite, daher sehe ich keine Schwierigkeiten beim Umstieg. Mit SQL habe ich im Rahmen meiner Weiterbildung bereits gearbeitet. Natürlich bin ich offen, auch weitere Sprachen oder Frameworks zu lernen.</p>
+  <h3>Was bringe ich mit?</h3>
+  <p>In der Ukraine habe ich ca. 10 Jahre im Bereich Internetmarketing gearbeitet. Zu meinen Aufgaben gehörte Inhaltserstellung, Erstellen und technisches Unterstützen von Blogs, Online-Handel, Visitenkartenseiten auf WordPress CMS. Außerdem habe ich viel mit Computer Hardware gearbeitet und Kundensupport geleistet.</p>
+  <p>Mein Ziel ist es, Software Ingenieur zu werden. Ich interessiere mich besonders für Backend-Entwicklung. Daher habe ich, als ich nach Deutschland kam, einen Python-Kurs begonnen.</p>
+  <p>Ich lerne weiterhin Python und andere Webentwicklungstechnologien. Nach dem Kurs verfüge ich über grundlegende Python-, Django- (REST, ORM), SQL-Kenntnisse. Darüber hinaus werde ich mich kurz mit JavaScript, HTML+CSS, FastAPI, Docker, Machine Learning und anderen Technologien vertraut machen.</p>
+  <p> habe ich meinen Deutschkurs erfolgreich mit der B1-Prüfung abgeschlossen, der B2-Kurs beginnt im Juli 2025. Ich bemühe mich, auch im Alltag und bei der Arbeit so viel Deutsch wie möglich zu sprechen.</p>
+  <p>Ich möchte gerne in Ihrem Unternehmen eine Ausbildung machen.</p>
+  <p>Zu jeder Zeit würde ich mich aber darüber hinaus über ein Angebot von Ihnen für ein Praktikum oder ein MiniJob(für einige Wochenstunden) freuen. So könnten wir uns gegenseitig besser kennenlernen.</p>
+  <p>Auch das Jobcenter unterstützt mich sehr in meiner Motivation, eine Ausbildung in Bereich IT zu machen.</p>
+  <p>Über Ihre Einladung zu einem Vorstellungsgespräch würde ich mich sehr freuen.</p>
+
+</div>
+
+<div class="grußformel">
+  Mit freundlichen Grüßen<br><br>
+  Oleksii Kovalenko
+</div>
+</div>
+</body>
+</html>
