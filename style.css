@@ -99,6 +99,7 @@ body.dark .sidebar {
     border: 2px solid #ccc;
     border-radius: 6px;
     padding: 10px;
+    z-index: 999;
 }
 
 .main-content {
@@ -423,7 +424,7 @@ body.dark .icon:not(.print-style) {
     padding: 1rem 40px 1rem 2rem;
     border-radius: 6px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    z-index: 998;
     white-space: normal;
     font-weight: bold;
     width: 85%;
