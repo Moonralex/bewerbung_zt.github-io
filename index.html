@@ -73,11 +73,12 @@
     </div>
     <div id="lebenslauf" class="content-page">
       <h1><span id="file-cv" class="icon"></span>Lebenslauf.py</h1>
+      <div id="notification" class="notification">
+        <button class="cancel-btn" type="button" onclick="hideById('notification')">&times;</button>
+        Sie sehen eine Lebenslauf-Version, die wie Python-Code gestaltet ist. Wenn sie Ihnen zu grell oder schwer lesbar erscheint, klicken Sie auf die Schaltfläche „Druckversion“. Diese ist im klassischen Stil gehalten.
+      </div>
 <pre class="code-block">
-  <div id="notification" class="notification">
-    <button class="cancel-btn" type="button" onclick="hideById('notification')">&times;</button>
-    Sie sehen eine Lebenslauf-Version, die wie Python-Code gestaltet ist. Wenn sie Ihnen zu grell oder schwer lesbar erscheint, klicken Sie auf die Schaltfläche „Druckversion“. Diese ist im klassischen Stil gehalten.
-  </div>
+
 
 <span class="line comment section" id="general-info">#ALLGEMEINE INFORMATIONEN</span>
 
@@ -92,6 +93,7 @@
 
 <span class="line lvl2"><span class="keyword">def</span> <span class="funcname">kurzprofil</span>(<span class="self">self</span>):</span>
 <span class="line lvl3"><span class="keyword">return</span> <span class="string">"Ich habe mein ganzes Leben lang mit Computern und Internet Marketing gearbeitet, jetzt lerne ich Python als Programmierer."</span></span>
+
 
 <span class="line comment section" id="berufserfahrung">#BERUFSERFAHRUNG</span>
 
@@ -138,7 +140,6 @@
 <span class="line lvl2"><span class="self">self</span>.dauer = <span class="string">"09/2023 - 06/2024"</span></span>
 <span class="line lvl2"><span class="self">self</span>.location = <span class="string">"54595 Prüm"</span></span>
 
-
 <span class="line"><span class="keyword">class</span> <span class="classname">Fahrer im Lieferservice</span>:</span>
 <span class="line lvl2"><span class="self">self</span>.unternehmen = <span class="string">"REWE Stadtkyll"</span></span>
 <span class="line lvl2"><span class="self">self</span>.dauer = <span class="string">"ab 01/2025"</span></span>
@@ -147,8 +148,6 @@
 
 <span class="line lvl2"><span class="keyword">def</span> <span class="funcname">beschreibung</span>(<span class="self">self</span>):</span>
 <span class="line lvl3"><span class="keyword">return</span> <span class="string">"Seitdem es meine Deutschkenntnisse möglich machen, arbeite ich hier, was mein Sprachverständnis und meine integration zusätzlich unterstützt."</span></span>
-
-
 
 
 <span class="line comment section" id="bildungsweg">#BILDUNGSWEG</span>
@@ -165,6 +164,7 @@
 <span class="line lvl2"><span class="self">self</span>.name = <span class="string">"Python Developer"</span></span>
 <span class="line lvl2"><span class="self">self</span>.anfang = <span class="string">"01/2023"</span></span>
 <span class="line lvl2"><span class="self">self</span>.status = <span class="string">"laufend"</span></span>
+
 
 <span class="line comment section" id="about-me">#ÜBER MICH</span>
 
@@ -193,6 +193,7 @@
 <span class="line lvl4"><span class="string">"Holzbearbeitung"</span>,</span>
 <span class="line lvl4"><span class="string">"Computerspiele"</span>,</span>
 <span class="line lvl3">]</span>
+
 
 <span class="line comment section" id="contact-info">#KONTAKT INFORMATIONEN</span>
 
