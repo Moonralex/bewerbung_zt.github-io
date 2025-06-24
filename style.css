@@ -160,6 +160,7 @@ body.dark .title-text {
 
 .code-block {
     font-size: 1.2rem;
+    margin-top: 1.5rem;
 }
 
 /*dark mode*/
@@ -426,7 +427,6 @@ body.dark .icon:not(.print-style) {
     white-space: normal;
     font-weight: bold;
     width: 85%;
-    margin-bottom: 1rem;
 }
 
 body.dark .notification {
@@ -515,6 +515,7 @@ body.dark .notification {
     .sidebar {
         width: var(--sidebar-weight-mobile);
         cursor: pointer;
+        font-size: 1.5rem;
     }
     .topbar {
         margin-left: var(--sidebar-weight-mobile);
